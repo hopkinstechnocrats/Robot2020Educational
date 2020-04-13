@@ -15,7 +15,36 @@ package frc.robot;
  * It is advised to statically import this class (or one of its inner classes) wherever the
  * constants are needed, to reduce verbosity.
  */
-public final class Constants 
+public final class Constants
 {
-    
+    //Motor CAN IDs
+    public static final int DRIVETRAIN_LEFT_CAN_ID = 0;
+    public static final int DRIVETRAIN_RIGHT_CAN_ID = 1;
+    public static final int LAUNCHER_MOTOR_CAN_ID = 2;
+    public static final int INTAKE_MOTOR_CAN_ID = 3;
+    public static final int FEED_MOTOR_CAN_ID = 4;
+
+    //Solenoid ID
+    public static final int INTAKE_SOLENOID_ID = 0;
+
+    //Driver controller
+    public static final int DRIVER_CONTROLLER_PORT = 0;
+    public static final int DRIVETRAIN_LEFT_AXIS = 1;
+    public static final int DRIVETRAIN_RIGHT_AXIS = 4;
+
+    //Operator controller
+    public static final int OPERATOR_CONTROLLER_PORT = 1;
+    public static final int DEPLOY_INTAKE_BUTTON_ID = 0; //Toggle whether intake is deployed when button is pressed.
+    public static final int SPIN_INTAKE_BUTTON_ID = 1; //Spin intake while the button is held
+    public static final int FEED_BALLS_BUTTON_ID = 2; //Spin intake while the button is held
+    public static final int SPIN_LAUNCHER_BUTTON_ID = 3; //Spin the launcher while the button is held
+    public static final int RAISE_HOOK_BUTTON_ID = 4; //Raise hook while the button is held
+    public static final int LOWER_HOOK_BUTTON_ID = 5; //Lower hook while the button is held
+
+    //Motor speeds
+    public static final int LAUNCHER_SPEED = 1;
+    public static final int INTAKE_SPEED = 1;
+    public static final int FEED_SPEED = 1;
+    public static final int RAISE_HOOK_SPEED = 1;
+    public static final int LOWER_HOOK_SPEED = -1;
 }
