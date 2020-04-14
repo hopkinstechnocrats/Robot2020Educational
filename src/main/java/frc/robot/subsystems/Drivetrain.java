@@ -27,7 +27,7 @@ public class Drivetrain extends SubsystemBase{
 
 
     }
-    public void sendDriveSignal(double right, double left){drive.tankDrive(left, right);}
+    public void sendDriveSignal(double left, double right){drive.tankDrive(left, right);}
     
     /**
      * Will be called periodically whenever the CommandScheduler runs.
