@@ -42,9 +42,9 @@ public final class Constants
     public static final int LOWER_HOOK_BUTTON_ID = 5; //Lower hook while the button is held
 
     //Motor speeds
-    public static final int LAUNCHER_SPEED = 1;
-    public static final int INTAKE_SPEED = 1;
-    public static final int FEED_SPEED = 1;
-    public static final int RAISE_HOOK_SPEED = 1;
-    public static final int LOWER_HOOK_SPEED = -1;
+    public static final double LAUNCHER_SPEED = 1;
+    public static final double INTAKE_SPEED = 1;
+    public static final double FEED_SPEED = 1;
+    public static final double RAISE_HOOK_SPEED = 1;
+    public static final double LOWER_HOOK_SPEED = -1;
 }
