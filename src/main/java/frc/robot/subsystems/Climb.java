@@ -7,18 +7,25 @@
 
 package frc.robot.subsystems;
 
+import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
+
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class Climb extends SubsystemBase {
+  WPI_TalonSRX motor;
   /**
    * Creates a new Climb.
    */
   public Climb() {
-
+    motor = new WPI_TalonSRX(5);
   }
 
-  @Override
-  public void periodic() {
-    // This method will be called once per scheduler run
+  public void moveClimb (double speed) {
+    motor.set(speed);
   }
+
+  public void periodic(){
+  }
+   // This method will be called once per scheduler run
 }
+
