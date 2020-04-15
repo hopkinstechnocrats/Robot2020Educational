@@ -10,6 +10,7 @@ package frc.robot.subsystems;
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
+import frc.robot.Constants;
 
 public class Climb extends SubsystemBase {
   WPI_TalonSRX motor;
@@ -17,7 +18,7 @@ public class Climb extends SubsystemBase {
    * Creates a new Climb.
    */
   public Climb() {
-    motor = new WPI_TalonSRX(CLIMB_MOTOR_CAN_ID);
+    motor = new WPI_TalonSRX(Constants.CLIMB_MOTOR_CAN_ID);
   }
 
   public void moveClimb(double speed) {
