@@ -7,19 +7,34 @@
 
 package frc.robot.subsystems;
 
+import edu.wpi.first.wpilibj.Solenoid;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
+import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
+import frc.robot.Constants;
 
 
-public class ExampleSubsystem extends SubsystemBase
+public class Intake extends SubsystemBase
 {
     /**
      * Creates a new ExampleSubsystem.
      */
-    public ExampleSubsystem()
+    WPI_TalonSRX motor;
+    Solenoid actuator;
+
+    public Intake()
     {
-        
+        motor = new WPI_TalonSRX(Constants.INTAKE_MOTOR_CAN_ID);
+        actuator = new Solenoid(Constants.INTAKE_SOLENOID_ID);
     }
-    
+
+    public void spinIntake(double speed) {
+        motor.set(speed);
+    }
+
+    public void toggleIntake() {
+        actuator.set(!actuator.get());
+    }
+
     /**
      * Will be called periodically whenever the CommandScheduler runs.
      */
