@@ -6,19 +6,25 @@
 /*----------------------------------------------------------------------------*/
 
 package frc.robot.subsystems;
-
+import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
+import frc.robot.Constants;
 
 public class Launcher extends SubsystemBase {
+  WPI_TalonSRX motor;
   /**
    * Creates a new Launcher.
    */
   public Launcher() {
-
+    motor = new WPI_TalonSRX(Constants.LAUNCHER_MOTOR_CAN_ID);
   }
 
   @Override
   public void periodic() {
     // This method will be called once per scheduler run
+  }
+
+  public void spinLauncher(double speed){
+    motor.set(speed);
   }
 }

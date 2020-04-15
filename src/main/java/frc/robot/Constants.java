@@ -22,6 +22,7 @@ public final class Constants
     public static final int LAUNCHER_MOTOR_CAN_ID = 2;
     public static final int INTAKE_MOTOR_CAN_ID = 3;
     public static final int FEED_MOTOR_CAN_ID = 4;
+    public static final int CLIMB_MOTOR_CAN_ID = 5;
 
     //Solenoid ID
     public static final int INTAKE_SOLENOID_ID = 0;
