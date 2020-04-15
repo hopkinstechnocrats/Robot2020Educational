@@ -8,6 +8,7 @@
 package frc.robot.commands;
 
 import edu.wpi.first.wpilibj2.command.CommandBase;
+import frc.robot.subsystems.Climb;
 
 public class MoveClimbCommand extends CommandBase {
   private Climb subsystem;
