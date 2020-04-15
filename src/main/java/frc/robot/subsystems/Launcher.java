@@ -27,4 +27,5 @@ public class Launcher extends SubsystemBase {
   public void spinLauncher(double speed){
     motor.set(speed);
   }
+  
 }
