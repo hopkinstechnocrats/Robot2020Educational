@@ -17,10 +17,10 @@ public class Climb extends SubsystemBase {
    * Creates a new Climb.
    */
   public Climb() {
-    motor = new WPI_TalonSRX(5);
+    motor = new WPI_TalonSRX(CLIMB_MOTOR_CAN_ID);
   }
 
-  public void moveClimb (double speed) {
+  public void moveClimb(double speed) {
     motor.set(speed);
   }
 
