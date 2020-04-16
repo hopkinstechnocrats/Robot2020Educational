@@ -4,11 +4,11 @@ import edu.wpi.first.wpilibj2.command.CommandBase;
 import frc.robot.subsystems.Intake;
 
 
-public class IntakeBallCommandsCommand extends CommandBase {
+public class IntakeBallCommand extends CommandBase {
     private Intake subsystem;
     private double speed;
 
-    public IntakeBallCommandsCommand(Intake subsystem, double speed) {
+    public IntakeBallCommand(Intake subsystem, double speed) {
         this.speed = speed;
         this.subsystem = subsystem;
         // each subsystem used by the command must be passed into the addRequirements() method (which takes a vararg of Subsystem)
